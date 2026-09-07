@@ -1,0 +1,151 @@
+{
+  "langName": "Ελληνικά",
+  "flag": "🇬🇷",
+  "ui": {
+    "brand": "NetTech Hub",
+    "themeToggle": "Αλλαγή Θέματος",
+    "moduleTitle": "Πρόγραμμα IHK (40 Ημέρες)",
+    "quizTitle": "Έλεγχος Γνώσεων",
+    "flashcardsTitle": "Κάρτες Μνήμης",
+    "nextQuestion": "Επόμενη Ερώτηση",
+    "finishBtn": "Τέλος",
+    "startQuiz": "Έναρξη Quiz",
+    "startFlashcards": "Μελέτη Καρτών",
+    "videoPlaceholder": "Κάντε κλικ εδώ για αναπαραγωγή του βίντεο Gemini"
+  },
+  "modules": [
+    {
+      "id": "mod1",
+      "title": "1. Δίκτυα & Επικοινωνία",
+      "duration": "4 Ημέρες",
+      "content": {
+        "intro": "Καλώς ήρθατε στην Ενότητα 1! Είμαι ο καθηγητής σας. Ξεκινάμε από τις απόλυτες βάσεις.",
+        "media": { "type": "audio", "src": "media/mod1_audio_placeholder.mp3" },
+        "explanation": "<h3>Τι είναι ένα Δίκτυο;</h3><p>Σκεφτείτε ένα δίκτυο σαν το οδικό σύστημα μιας πόλης. Αν θέλετε να στείλετε ένα γράμμα, χρειάζεστε δρόμους (καλώδια ή Wi-Fi), μια ταχυδρομική υπηρεσία (πρωτόκολλα) και μια διεύθυνση (IP/MAC).</p><h3>Τοπολογίες Δικτύου</h3><div class=\"topos-grid\"><div class=\"topo-card\"><h4>⭐ Αστέρας (Star)</h4><p>Όλες οι συσκευές συνδέονται σε ένα κεντρικό σημείο (switch). Αν κοπεί ένα καλώδιο, επηρεάζεται μόνο μία συσκευή.</p></div><div class=\"topo-card\"><h4>🕸️ Πλέγμα (Mesh)</h4><p>Κάθε συσκευή συνδέεται με κάθε άλλη. Πολύ αξιόπιστο αλλά ακριβό.</p></div><div class=\"topo-card\"><h4>🚌 Αρτηρία (Bus)</h4><p>Όλες οι συσκευές μοιράζονται ένα καλώδιο. Αν το καλώδιο κοπεί, όλο το δίκτυο πέφτει.</p></div><div class=\"topo-card\"><h4>💍 Δακτύλιος (Ring)</h4><p>Οι συσκευές συνδέονται σε κύκλο. Τα δεδομένα ταξιδεύουν προς μία κατεύθυνση.</p></div></div><h3>Το Μοντέλο OSI (7 Επίπεδα)</h3><table class=\"osi-table\"><tr><th>Επίπεδο</th><th>Όνομα</th><th>Λειτουργία</th></tr><tr><td>7</td><td>Application (Εφαρμογή)</td><td>HTTP, DNS (Διεπαφή Χρήστη)</td></tr><tr><td>6</td><td>Presentation (Παρουσίαση)</td><td>Μορφοποίηση, Κρυπτογράφηση (JPEG, SSL)</td></tr><tr><td>5</td><td>Session (Σύνοδος)</td><td>Δημιουργία σύνδεσης</td></tr><tr><td>4</td><td>Transport (Μεταφορά)</td><td>TCP (αξιόπιστο) / UDP (γρήγορο)</td></tr><tr><td>3</td><td>Network (Δίκτυο)</td><td>Διευθύνσεις IP, Δρομολόγηση (Routers)</td></tr><tr><td>2</td><td>Data Link (Ζεύξη Δεδομένων)</td><td>Διευθύνσεις MAC (Switches)</td></tr><tr><td>1</td><td>Physical (Φυσικό)</td><td>Καλώδια, Bits, Hubs</td></tr></table>",
+        "image": "images/mod1_network.png",
+        "examples": "<h3>Καθημερινά Παραδείγματα</h3><p><strong>Παράδειγμα 1: Παρακολουθώντας Netflix.</strong> Η τηλεόρασή σας (Client) στέλνει ένα αίτημα μέσω του οικιακού Wi-Fi στο Router. Το Router στέλνει αυτό το αίτημα μέσω της χώρας (WAN) στους servers του Netflix.</p><p><strong>Παράδειγμα 2: Εκτύπωση στη δουλειά.</strong> Το PC σας στέλνει ένα έγγραφο μέσω καλωδίου στο Switch. Το Switch το στέλνει απευθείας στον εκτυπωτή στο ίδιο δωμάτιο. Το Router δεν χρειάζεται για αυτό!</p>"
+      },
+      "quiz": [
+        {
+          "question": "Ποια συσκευή συνδέει το οικιακό σας δίκτυο (LAN) με το Internet (WAN);",
+          "options": ["Switch", "Router", "Access Point", "Hub"],
+          "answer": 1,
+          "explanation": "Η δουλειά ενός Router είναι να συνδέει διαφορετικά δίκτυα μεταξύ τους (δρομολόγηση). Ένα Switch παραμένει πάντα μέσα στο ίδιο LAN."
+        },
+        {
+          "question": "Αν 10 υπολογιστές σε μια τάξη θέλουν να ανταλλάξουν αρχεία χωρίς να χρησιμοποιήσουν το Internet, ποια συσκευή χρειάζεται;",
+          "options": ["Firewall", "Router", "Switch", "Modem"],
+          "answer": 2,
+          "explanation": "Ένα Switch συνδέει συσκευές μέσα σε ένα τοπικό δίκτυο (LAN). Εφόσον δεν χρειάζεται internet (WAN), ένα router είναι περιττό."
+        },
+        {
+          "question": "Ποιο μοντέλο αρχιτεκτονικής χρησιμοποιείται όταν όλα τα PC είναι ισότιμα και μοιράζονται αρχεία απευθείας μεταξύ τους;",
+          "options": ["Client-Server", "Peer-to-Peer (P2P)", "Top-Down", "Ring Topology"],
+          "answer": 1,
+          "explanation": "Στο Peer-to-Peer (P2P), δεν υπάρχει κεντρικός διακομιστής (server). Κάθε PC μπορεί να λειτουργήσει και ως client και ως server."
+        },
+        {
+          "question": "Ποια είναι η καλύτερη περιγραφή για ένα WAN;",
+          "options": ["Ένα μικρό δίκτυο σε ένα σπίτι", "Ένα δίκτυο βασισμένο σε Bluetooth", "Ένα μεγάλο δίκτυο που συνδέει LAN σε μεγάλες αποστάσεις", "Μια απευθείας ενσύρματη σύνδεση μεταξύ δύο PC"],
+          "answer": 2,
+          "explanation": "Το WAN σημαίνει Wide Area Network. Το internet είναι το πιο διάσημο παράδειγμα, καθώς εκτείνεται σε όλη την υδρόγειο."
+        },
+        {
+          "question": "Ποια δήλωση για έναν Client (Πελάτη) είναι σωστή;",
+          "options": ["Ένας client παρέχει υπηρεσίες σε άλλους", "Ένας client ζητά δεδομένα από έναν server", "Ένας client είναι πάντα ένα router", "Ένας client είναι ένα φυσικό καλώδιο"],
+          "answer": 1,
+          "explanation": "Στην αρχιτεκτονική client-server, ο client είναι αυτός που κάνει το αίτημα (π.χ. ο browser σας που ζητά μια ιστοσελίδα)."
+        }
+      ],
+      "flashcards": [
+        { "term": "LAN", "definition": "Local Area Network. Ένα τοπικό δίκτυο μέσα σε ένα κτίριο." },
+        { "term": "WAN", "definition": "Wide Area Network. Ένα δίκτυο μεγάλης κλίμακας (π.χ. το internet)." },
+        { "term": "Switch", "definition": "Συνδέει συσκευές μαζί μέσα σε ένα LAN." },
+        { "term": "Router", "definition": "Προωθεί δεδομένα μεταξύ διαφορετικών δικτύων." }
+      ]
+    },
+    {
+      "id": "mod2",
+      "title": "2. Φυσικό Δίκτυο",
+      "duration": "4 Ημέρες",
+      "content": {
+        "intro": "Στην Ενότητα 2, μπαίνουμε στον φυσικό κόσμο των δικτύων: καλώδια, σήματα και το Επίπεδο 1 του μοντέλου OSI.",
+        "media": { "type": "audio", "src": "media/mod2_audio_placeholder.mp3" },
+        "explanation": "<h3>Χαλκός vs. Οπτική Ίνα</h3><p>Τα δεδομένα πρέπει να ταξιδέψουν φυσικά από το Α στο Β. Αυτό συμβαίνει μέσω ηλεκτρισμού (χάλκινα καλώδια), φωτός (οπτικές ίνες) ή ραδιοκυμάτων (Wi-Fi).</p><ul><li><strong>Twisted Pair (Χαλκός):</strong> Το τυπικό καλώδιο LAN (RJ-45). Χρησιμοποιεί ηλεκτρικούς παλμούς. Φθηνό, αλλά περιορίζεται στα 100 μέτρα.</li><li><strong>Οπτική Ίνα:</strong> Χρησιμοποιεί σήματα φωτός. Εξαιρετικά γρήγορη και καλύπτει χιλιόμετρα χωρίς απώλεια σήματος, αλλά είναι πιο ακριβή.</li></ul><h3>Τι είναι το Ethernet;</h3><p>Το Ethernet είναι το παγκόσμιο πρότυπο για τα ενσύρματα LAN. Ορίζει πώς τα δεδομένα συσκευάζονται σε μικρά πακέτα (frames).</p>",
+        "image": "images/mod2_ethernet.png",
+        "examples": "<h3>Παράδειγμα: Κόψιμο Καλωδίου</h3><p>Αν πρέπει να συνδέσετε δύο switches σε ένα data center που απέχουν 300 μέτρα, δεν μπορείτε να χρησιμοποιήσετε κανονικό καλώδιο χαλκού. Μετά τα 100 μέτρα, το σήμα εξασθενεί υπερβολικά. Πρέπει να βάλετε οπτική ίνα.</p>"
+      },
+      "quiz": [
+        {
+          "question": "Ποιο είναι το μέγιστο επιτρεπόμενο μήκος για ένα τυπικό καλώδιο χαλκού (π.χ. Cat6);",
+          "options": ["10 Μέτρα", "100 Μέτρα", "500 Μέτρα", "1 Χιλιόμετρο"],
+          "answer": 1,
+          "explanation": "Το πρότυπο για το Ethernet μέσω χαλκού περιορίζει το μέγιστο μήκος στα 100 μέτρα."
+        },
+        {
+          "question": "Ποιο μέσο χρησιμοποιεί παλμούς φωτός για τη μετάδοση δεδομένων;",
+          "options": ["Ομοαξονικό Καλώδιο", "Καλώδιο Twisted-Pair", "Καλώδιο Οπτικής Ίνας", "Σειριακό Καλώδιο"],
+          "answer": 2,
+          "explanation": "Τα καλώδια οπτικών ινών μεταδίδουν δεδομένα χρησιμοποιώντας φως (laser ή LED)."
+        },
+        {
+          "question": "Ποιος τύπος βύσματος χρησιμοποιείται συχνότερα για δίκτυα Ethernet χαλκού;",
+          "options": ["RJ-11", "RJ-45", "USB", "HDMI"],
+          "answer": 1,
+          "explanation": "Το βύσμα RJ-45 είναι το παγκόσμιο πρότυπο για την καλωδίωση Ethernet."
+        }
+      ],
+      "flashcards": [
+        { "term": "RJ-45", "definition": "Το τυπικό βύσμα για καλώδια χαλκού Ethernet." },
+        { "term": "Οπτική Ίνα", "definition": "Καλώδιο που χρησιμοποιεί φως για τη μετάδοση δεδομένων (υψηλή ταχύτητα)." },
+        { "term": "Twisted Pair", "definition": "Χάλκινο καλώδιο με συνεστραμμένα ζεύγη καλωδίων για μείωση παρεμβολών. Max 100m." }
+      ]
+    },
+    {
+      "id": "mod3",
+      "title": "3. Switching & IOS",
+      "duration": "5 Ημέρες",
+      "content": {
+        "intro": "Στην Ενότητα 3, θα γνωρίσουμε τους 'εγκεφάλους' των switches: το λειτουργικό σύστημα Cisco IOS και πώς τα switches προωθούν τα frames.",
+        "media": { "type": "audio", "src": "media/mod3_audio_placeholder.mp3" },
+        "explanation": "<h3>Ο Πίνακας Διευθύνσεων MAC</h3><p>Ένα switch είναι έξυπνο. Θυμάται ποιος είναι συνδεδεμένος σε ποια θύρα. Το κάνει αυτό χρησιμοποιώντας τον <strong>Πίνακα Διευθύνσεων MAC (MAC Address Table)</strong>. Κάθε συσκευή δικτύου έχει μια μοναδική φυσική διεύθυνση (τη διεύθυνση MAC). Όταν ένα PC στέλνει ένα πακέτο δεδομένων (frame), το switch κοιτάζει τη διεύθυνση MAC προέλευσης και την αποθηκεύει μαζί με τον αριθμό της θύρας.</p><h3>Cisco IOS (Internetwork Operating System)</h3><p>Αυτό είναι το λειτουργικό σύστημα που τρέχει σε routers και switches της Cisco. Η διαμόρφωση των συσκευών γίνεται μέσω μιας γραμμής εντολών (CLI - Command Line Interface). Υπάρχουν διάφορες λειτουργίες (modes):</p><ul><li><strong>User EXEC Mode (&gt;):</strong> Πολύ περιορισμένη. Μόνο λίγες απλές εντολές για προβολή.</li><li><strong>Privileged EXEC Mode (#):</strong> Εδώ μπορείτε να δείτε τα πάντα και να κοιτάξετε πιο βαθιά στο σύστημα. (Εντολή: <em>enable</em>)</li><li><strong>Global Configuration Mode (config)#:</strong> Εδώ κάνετε αλλαγές που επηρεάζουν ολόκληρη τη συσκευή, π.χ. αλλαγή του ονόματος (hostname). (Εντολή: <em>configure terminal</em>)</li></ul>",
+        "image": "images/mod3_switching.png",
+        "examples": "<h3>Παράδειγμα: Πώς μαθαίνει ένα Switch</h3><p>Το PC-A (Θύρα 1) στέλνει ένα frame στο PC-B (Θύρα 2). Το switch δεν γνωρίζει ακόμα το PC-B. Αποθηκεύει 'Το PC-A είναι στη Θύρα 1' και πλημμυρίζει (floods) το frame σε <strong>όλες</strong> τις άλλες θύρες (εκτός από τη Θύρα 1). Όταν το PC-B απαντήσει, το switch αποθηκεύει 'Το PC-B είναι στη Θύρα 2'. Από εδώ και πέρα, το switch στέλνει frames μεταξύ του A και του B απευθείας μέσω των Θυρών 1 και 2 - χωρίς να ενοχλεί τους άλλους!</p>"
+      },
+      "quiz": [
+        {
+          "question": "Σε ποια λειτουργία του Cisco IOS πρέπει να βρίσκεστε για να αλλάξετε το hostname του switch;",
+          "options": ["User EXEC Mode", "Privileged EXEC Mode", "Global Configuration Mode", "Interface Configuration Mode"],
+          "answer": 2,
+          "explanation": "Για να αλλάξετε ρυθμίσεις που αφορούν όλη τη συσκευή, όπως το hostname, πρέπει να βρίσκεστε στο Global Configuration Mode (Switch(config)#)."
+        },
+        {
+          "question": "Τι κάνει ένα switch αν δεν μπορεί να βρει τη διεύθυνση MAC προορισμού ενός εισερχόμενου frame στον πίνακά του;",
+          "options": ["Απορρίπτει το frame", "Το στέλνει στο router", "Το πλημμυρίζει σε όλες τις θύρες εκτός από τη θύρα λήψης", "Το στέλνει πίσω στον αποστολέα"],
+          "answer": 2,
+          "explanation": "Αυτή η συμπεριφορά ονομάζεται 'Flooding'. Το switch στέλνει το frame σε όλους (Unknown Unicast) για να εξασφαλίσει ότι ο προορισμός θα το λάβει."
+        },
+        {
+          "question": "Ποια εντολή σας μεταφέρει από το User EXEC Mode στο Privileged EXEC Mode;",
+          "options": ["configure terminal", "enable", "exit", "login"],
+          "answer": 1,
+          "explanation": "Η εντολή 'enable' (συχνά συντομεύεται ως 'en') σας μεταφέρει από το User mode (>) στο Privileged mode (#)."
+        }
+      ],
+      "flashcards": [
+        { "term": "MAC Table", "definition": "Η μνήμη του switch που αντιστοιχίζει θύρες με διευθύνσεις MAC." },
+        { "term": "User EXEC Mode", "definition": "Περιορισμένη λειτουργία στο Cisco IOS (Προτροπή: >)." },
+        { "term": "Privileged EXEC Mode", "definition": "Πλήρης λειτουργία ανάγνωσης για κατάσταση και αποσφαλμάτωση (Προτροπή: #)." },
+        { "term": "Global Config Mode", "definition": "Όπου κάνετε ρυθμίσεις για όλη τη συσκευή (Προτροπή: (config)#)." }
+      ]
+    },
+    { "id": "mod4", "title": "4. VLAN & Trunking", "duration": "4 Ημέρες" },
+    { "id": "mod5", "title": "5. IPv4 & Subnets", "duration": "6 Ημέρες" },
+    { "id": "mod6", "title": "6. ARP, ICMP & Route", "duration": "4 Ημέρες" },
+    { "id": "mod7", "title": "7. Inter-VLAN, STP", "duration": "4 Ημέρες" },
+    { "id": "mod8", "title": "8. Υπηρεσίες Δικτύου", "duration": "4 Ημέρες" },
+    { "id": "mod9", "title": "9. IPv6", "duration": "2 Ημέρες" },
+    { "id": "mod10", "title": "10. Routing & Ασφάλεια", "duration": "3 Ημέρες" },
+    { "id": "mod11", "title": "Τελικό Πρότζεκτ", "duration": "Final" }
+  ]
+}
