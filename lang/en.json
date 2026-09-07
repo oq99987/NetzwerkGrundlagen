@@ -1,0 +1,151 @@
+{
+  "langName": "English",
+  "flag": "🇬🇧",
+  "ui": {
+    "brand": "NetTech Hub",
+    "themeToggle": "Toggle Theme",
+    "moduleTitle": "IHK Curriculum (40 Days)",
+    "quizTitle": "Knowledge Check",
+    "flashcardsTitle": "Flashcards",
+    "nextQuestion": "Next Question",
+    "finishBtn": "Finish",
+    "startQuiz": "Start Quiz",
+    "startFlashcards": "Study Flashcards",
+    "videoPlaceholder": "Click here to play the Gemini Video Lesson"
+  },
+  "modules": [
+    {
+      "id": "mod1",
+      "title": "1. Networks & Comm.",
+      "duration": "4 Days",
+      "content": {
+        "intro": "Welcome to Module 1! I am your CCNA tutor. We are starting from the absolute basics.",
+        "media": { "type": "audio", "src": "media/mod1_audio_placeholder.mp3" },
+        "explanation": "<h3>What is a Network?</h3><p>Think of a network like a city's road system. If you want to send a letter, you need roads (cables or Wi-Fi), a postal service (protocols), and an address (IP/MAC).</p><h3>Network Topologies</h3><div class=\"topos-grid\"><div class=\"topo-card\"><h4>⭐ Star</h4><p>All devices connect to a central point (switch). If a cable fails, only one device is affected.</p></div><div class=\"topo-card\"><h4>🕸️ Mesh</h4><p>Every device is connected to every other device. Very reliable but expensive.</p></div><div class=\"topo-card\"><h4>🚌 Bus</h4><p>All devices share a single cable. If the main cable fails, the entire network drops.</p></div><div class=\"topo-card\"><h4>💍 Ring</h4><p>Devices are connected in a circle. Data travels in one direction (Token Ring).</p></div></div><h3>The OSI Model (7 Layers)</h3><table class=\"osi-table\"><tr><th>Layer</th><th>Name</th><th>Function</th></tr><tr><td>7</td><td>Application</td><td>HTTP, DNS (User Interface)</td></tr><tr><td>6</td><td>Presentation</td><td>Data formatting, Encryption (JPEG, SSL)</td></tr><tr><td>5</td><td>Session</td><td>Connection establishment</td></tr><tr><td>4</td><td>Transport</td><td>TCP (reliable) / UDP (fast)</td></tr><tr><td>3</td><td>Network</td><td>IP Addresses, Routing (Routers)</td></tr><tr><td>2</td><td>Data Link</td><td>MAC Addresses (Switches)</td></tr><tr><td>1</td><td>Physical</td><td>Cables, Bits, Hubs</td></tr></table>",
+        "image": "images/mod1_network.png",
+        "examples": "<h3>Everyday Examples</h3><p><strong>Example 1: Watching Netflix.</strong> Your TV (Client) sends a request over home Wi-Fi to the Router. The Router sends that request across the country (WAN) to Netflix's servers.</p><p><strong>Example 2: Printing at work.</strong> Your PC sends a document via cable to the Switch. The Switch sends it directly to the printer in the same room. The Router is not needed for this!</p>"
+      },
+      "quiz": [
+        {
+          "question": "Which device connects your home network (LAN) to the Internet (WAN)?",
+          "options": ["Switch", "Router", "Access Point", "Hub"],
+          "answer": 1,
+          "explanation": "A Router's job is to connect different networks together (routing). A Switch always stays within the same LAN."
+        },
+        {
+          "question": "If 10 computers in a classroom want to share files without using the internet, which device is needed?",
+          "options": ["Firewall", "Router", "Switch", "Modem"],
+          "answer": 2,
+          "explanation": "A Switch connects devices within a local area network (LAN). Since no internet (WAN) is needed, a router is unnecessary."
+        },
+        {
+          "question": "Which architecture model is used when all PCs are equal and share files directly with each other?",
+          "options": ["Client-Server", "Peer-to-Peer (P2P)", "Top-Down", "Ring Topology"],
+          "answer": 1,
+          "explanation": "In Peer-to-Peer (P2P), there is no central server. Every PC (peer) can act as both a client and a server to others."
+        },
+        {
+          "question": "What best describes a WAN?",
+          "options": ["A small network in a house", "A network based on Bluetooth", "A large network connecting LANs over long distances", "A direct cable connection between two PCs"],
+          "answer": 2,
+          "explanation": "WAN stands for Wide Area Network. The internet is the most famous example, as it spans the globe connecting LANs."
+        },
+        {
+          "question": "Which statement about a Client is correct?",
+          "options": ["A client provides services to others", "A client requests data from a server", "A client is always a router", "A client is a physical cable"],
+          "answer": 1,
+          "explanation": "In the client-server architecture, the client is the 'customer' making a request (e.g., your browser requesting a web page from a web server)."
+        }
+      ],
+      "flashcards": [
+        { "term": "LAN", "definition": "Local Area Network. A local network inside a building." },
+        { "term": "WAN", "definition": "Wide Area Network. A large scale network (e.g., the internet)." },
+        { "term": "Switch", "definition": "Connects devices together within a LAN." },
+        { "term": "Router", "definition": "Forwards data between different networks." }
+      ]
+    },
+    {
+      "id": "mod2",
+      "title": "2. Physical Network Tech",
+      "duration": "4 Days",
+      "content": {
+        "intro": "In Module 2, we dive into the physical world of networks: cables, signals, and Layer 1 of the OSI model.",
+        "media": { "type": "audio", "src": "media/mod2_audio_placeholder.mp3" },
+        "explanation": "<h3>Copper vs. Fiber</h3><p>Data must physically travel from A to B. This happens via electricity (copper cables), light (fiber optics), or radio waves (Wi-Fi).</p><ul><li><strong>Twisted Pair (Copper):</strong> The typical LAN cable (RJ-45). It uses electrical impulses. Cheap, but limited to about 100 meters.</li><li><strong>Fiber Optic:</strong> Uses light signals. Extremely fast and bridges kilometers without signal loss, but is more expensive and fragile.</li></ul><h3>What is Ethernet?</h3><p>Ethernet is the global standard for wired LANs. It defines how data is packaged into small frames and how devices know when they are allowed to transmit.</p>",
+        "image": "images/mod2_ethernet.png",
+        "examples": "<h3>Example: Cable Break</h3><p>If you need to connect two switches in a data center that are 300 meters apart, you cannot use a normal copper cable (Twisted Pair)! After 100 meters, the signal becomes too weak. You must lay a fiber optic cable.</p>"
+      },
+      "quiz": [
+        {
+          "question": "What is the maximum allowed length for a typical twisted-pair copper cable (e.g., Cat6) before the signal must be repeated?",
+          "options": ["10 Meters", "100 Meters", "500 Meters", "1 Kilometer"],
+          "answer": 1,
+          "explanation": "The standard for copper-based Ethernet (Twisted Pair) limits the maximum segment length to 100 meters (328 feet)."
+        },
+        {
+          "question": "Which medium uses light pulses to transmit data?",
+          "options": ["Coaxial Cable", "Twisted-Pair Cable", "Fiber Optic Cable", "Serial Cable"],
+          "answer": 2,
+          "explanation": "Fiber Optic cables transmit data using light (lasers or LEDs), allowing for extremely high speeds and long distances."
+        },
+        {
+          "question": "Which connector type is most commonly used for copper Ethernet networks?",
+          "options": ["RJ-11", "RJ-45", "USB", "HDMI"],
+          "answer": 1,
+          "explanation": "The RJ-45 connector is the worldwide standard for terminating Ethernet twisted-pair cabling in LANs."
+        }
+      ],
+      "flashcards": [
+        { "term": "RJ-45", "definition": "Standard connector for Ethernet copper cables in LANs." },
+        { "term": "Fiber Optic", "definition": "Cable that uses light to transmit data (high distance/speed)." },
+        { "term": "Twisted Pair", "definition": "Copper cable with twisted wire pairs to reduce interference. Max 100m." }
+      ]
+    },
+    {
+      "id": "mod3",
+      "title": "3. Switching & Cisco IOS",
+      "duration": "5 Days",
+      "content": {
+        "intro": "In Module 3, we get to know the 'brains' of the switches: the Cisco IOS operating system and how switches forward frames.",
+        "media": { "type": "audio", "src": "media/mod3_audio_placeholder.mp3" },
+        "explanation": "<h3>The MAC Address Table</h3><p>A switch is smart. It remembers who is connected to which port. It does this using the <strong>MAC Address Table</strong>. Every network device has a unique physical address (the MAC address). When a PC sends a data packet (frame), the switch looks at the source MAC address and saves it along with the port number.</p><h3>Cisco IOS (Internetwork Operating System)</h3><p>This is the operating system that runs on Cisco routers and switches. You configure the devices via a command line (CLI - Command Line Interface). There are different modes:</p><ul><li><strong>User EXEC Mode (&gt;):</strong> Very restricted. Just a few simple commands for viewing.</li><li><strong>Privileged EXEC Mode (#):</strong> Here you can view everything and look deeper into the system. (Command: <em>enable</em>)</li><li><strong>Global Configuration Mode (config)#:</strong> Here you make changes that affect the entire device, e.g., changing the name (hostname). (Command: <em>configure terminal</em>)</li></ul>",
+        "image": "images/mod3_switching.png",
+        "examples": "<h3>Example: A Switch Learns</h3><p>PC-A (Port 1) sends a frame to PC-B (Port 2). The switch does not know PC-B yet. It saves 'PC-A is on Port 1' and floods the frame to <strong>all</strong> other ports (except Port 1). When PC-B replies, the switch saves 'PC-B is on Port 2'. From now on, the switch only sends frames between A and B directly via Port 1 and 2 - without disturbing the others!</p>"
+      },
+      "quiz": [
+        {
+          "question": "Which Cisco IOS mode do you need to be in to change the switch's hostname?",
+          "options": ["User EXEC Mode", "Privileged EXEC Mode", "Global Configuration Mode", "Interface Configuration Mode"],
+          "answer": 2,
+          "explanation": "To change device-wide configurations like the hostname, you must be in the Global Configuration Mode (Switch(config)#)."
+        },
+        {
+          "question": "What does a switch do if it cannot find the destination MAC address of an incoming frame in its MAC table?",
+          "options": ["It drops the frame", "It sends it to the router", "It floods the frame to all ports except the receiving port", "It sends it back to the sender"],
+          "answer": 2,
+          "explanation": "This behavior is called 'Flooding'. The switch sends the frame to everyone (Unknown Unicast) to ensure the destination receives it."
+        },
+        {
+          "question": "Which command takes you from User EXEC Mode to Privileged EXEC Mode?",
+          "options": ["configure terminal", "enable", "exit", "login"],
+          "answer": 1,
+          "explanation": "The 'enable' command (often abbreviated as 'en') takes you from the User mode (>) to the Privileged mode (#)."
+        }
+      ],
+      "flashcards": [
+        { "term": "MAC Table", "definition": "The switch's memory that maps ports to MAC addresses." },
+        { "term": "User EXEC Mode", "definition": "Restricted mode in Cisco IOS (Prompt: >)." },
+        { "term": "Privileged EXEC Mode", "definition": "Full read mode for status and debugging (Prompt: #)." },
+        { "term": "Global Config Mode", "definition": "Where you make device-wide settings (Prompt: (config)#)." }
+      ]
+    },
+    { "id": "mod4", "title": "4. VLAN & Trunking", "duration": "4 Days" },
+    { "id": "mod5", "title": "5. IPv4 & Subnetting", "duration": "6 Days" },
+    { "id": "mod6", "title": "6. ARP, ICMP & Routing", "duration": "4 Days" },
+    { "id": "mod7", "title": "7. Inter-VLAN, STP", "duration": "4 Days" },
+    { "id": "mod8", "title": "8. Network Svcs & Trans.", "duration": "4 Days" },
+    { "id": "mod9", "title": "9. IPv6", "duration": "2 Days" },
+    { "id": "mod10", "title": "10. Routing & Security", "duration": "3 Days" },
+    { "id": "mod11", "title": "Final Project", "duration": "Final" }
+  ]
+}

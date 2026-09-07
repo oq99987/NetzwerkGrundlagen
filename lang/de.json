@@ -1,0 +1,151 @@
+{
+  "langName": "Deutsch",
+  "flag": "🇩🇪",
+  "ui": {
+    "brand": "NetTech Hub",
+    "themeToggle": "Theme Umschalten",
+    "moduleTitle": "IHK Curriculum (40 Tage)",
+    "quizTitle": "Wissens-Check",
+    "flashcardsTitle": "Lernkarten",
+    "nextQuestion": "Nächste Frage",
+    "finishBtn": "Beenden",
+    "startQuiz": "Quiz Starten",
+    "startFlashcards": "Lernkarten Starten",
+    "videoPlaceholder": "Hier klicken, um das Gemini-Lehrvideo abzuspielen"
+  },
+  "modules": [
+    {
+      "id": "mod1",
+      "title": "1. Netzwerke & Komm.",
+      "duration": "4 Tage",
+      "content": {
+        "intro": "Willkommen zu Modul 1! Ich bin dein CCNA-Tutor. Wir fangen bei den absoluten Grundlagen an.",
+        "media": { "type": "audio", "src": "media/mod1_audio_placeholder.mp3" },
+        "explanation": "<h3>Was ist ein Netzwerk?</h3><p>Stell dir ein Netzwerk wie das Straßennetz einer Stadt vor. Wenn du einen Brief senden willst, brauchst du Straßen (Kabel oder WLAN), einen Postdienst (Protokolle) und eine Adresse (IP/MAC).</p><h3>Netzwerktopologien</h3><div class=\"topos-grid\"><div class=\"topo-card\"><h4>⭐ Stern (Star)</h4><p>Alle Geräte sind mit einem zentralen Punkt (Switch) verbunden. Fällt ein Kabel aus, betrifft es nur ein Gerät.</p></div><div class=\"topo-card\"><h4>🕸️ Maschen (Mesh)</h4><p>Jedes Gerät ist mit jedem verbunden. Sehr ausfallsicher, aber teuer.</p></div><div class=\"topo-card\"><h4>🚌 Bus</h4><p>Alle Geräte teilen sich ein einziges Kabel. Fällt das Kabel aus, ist das ganze Netzwerk tot.</p></div><div class=\"topo-card\"><h4>💍 Ring</h4><p>Geräte sind in einem Ring verbunden. Daten wandern in eine Richtung.</p></div></div><h3>Das OSI-Modell (7 Schichten)</h3><table class=\"osi-table\"><tr><th>Layer</th><th>Name</th><th>Funktion</th></tr><tr><td>7</td><td>Application</td><td>HTTP, DNS (Nutzer-Schnittstelle)</td></tr><tr><td>6</td><td>Presentation</td><td>Verschlüsselung (JPEG, SSL)</td></tr><tr><td>5</td><td>Session</td><td>Sitzungsaufbau</td></tr><tr><td>4</td><td>Transport</td><td>TCP (zuverlässig) / UDP (schnell)</td></tr><tr><td>3</td><td>Network</td><td>IP-Adressen, Routing (Router)</td></tr><tr><td>2</td><td>Data Link</td><td>MAC-Adressen (Switches)</td></tr><tr><td>1</td><td>Physical</td><td>Kabel, Bits, Hubs</td></tr></table>",
+        "image": "images/mod1_network.png",
+        "examples": "<h3>Alltags-Beispiele</h3><p><strong>Beispiel 1: Netflix schauen.</strong> Dein TV (Client) sendet über das Heim-WLAN eine Anfrage an den Router. Der Router schickt diese Anfrage durch das Land (WAN) zu den Servern von Netflix.</p><p><strong>Beispiel 2: Drucken im Büro.</strong> Dein PC schickt das Dokument über ein Kabel an den Switch. Der Switch schickt es direkt an den Drucker im selben Raum. Der Router wird dafür nicht gebraucht!</p>"
+      },
+      "quiz": [
+        {
+          "question": "Welches Gerät verbindet dein Heimnetzwerk (LAN) mit dem Internet (WAN)?",
+          "options": ["Switch", "Router", "Access Point", "Hub"],
+          "answer": 1,
+          "explanation": "Ein Router hat die Aufgabe, verschiedene Netzwerke miteinander zu verbinden (Routing). Ein Switch bleibt immer innerhalb desselben LANs."
+        },
+        {
+          "question": "Wenn 10 Computer in einem Klassenraum Dateien austauschen wollen, ohne das Internet zu nutzen, welches Gerät wird benötigt?",
+          "options": ["Firewall", "Router", "Switch", "Modem"],
+          "answer": 2,
+          "explanation": "Ein Switch verbindet Geräte innerhalb eines lokalen Netzwerks (LAN). Da kein Internet (WAN) benötigt wird, ist ein Router überflüssig."
+        },
+        {
+          "question": "Welches Architekturmodell wird verwendet, wenn alle PCs gleichberechtigt sind und Dateien direkt untereinander teilen?",
+          "options": ["Client-Server", "Peer-to-Peer (P2P)", "Top-Down", "Ring-Topologie"],
+          "answer": 1,
+          "explanation": "Bei Peer-to-Peer (P2P) gibt es keinen zentralen Server. Jeder PC (Peer) kann gleichzeitig Client und Server für die anderen sein."
+        },
+        {
+          "question": "Was beschreibt ein WAN am besten?",
+          "options": ["Ein kleines Netzwerk in einem Haus", "Ein Netzwerk, das auf Bluetooth basiert", "Ein großes Netzwerk, das LANs über weite Strecken verbindet", "Ein direkter Kabelanschluss zwischen zwei PCs"],
+          "answer": 2,
+          "explanation": "WAN steht für Wide Area Network. Das Internet ist das bekannteste und größte Beispiel dafür, da es weltumspannend LANs verbindet."
+        },
+        {
+          "question": "Welche Aussage über einen Client ist korrekt?",
+          "options": ["Ein Client stellt Dienste für andere bereit", "Ein Client fordert Daten von einem Server an", "Ein Client ist immer ein Router", "Ein Client ist ein physisches Kabel"],
+          "answer": 1,
+          "explanation": "In der Client-Server-Architektur ist der Client der 'Kunde', der eine Anfrage stellt (z.B. dein Browser, der eine Webseite von einem Webserver anfordert)."
+        }
+      ],
+      "flashcards": [
+        { "term": "LAN", "definition": "Local Area Network. Ein lokales Netzwerk in einem Gebäude." },
+        { "term": "WAN", "definition": "Wide Area Network. Ein weitreichendes Netzwerk (z.B. das Internet)." },
+        { "term": "Switch", "definition": "Verbindet Geräte innerhalb eines LANs." },
+        { "term": "Router", "definition": "Leitet Daten zwischen verschiedenen Netzwerken weiter." }
+      ]
+    },
+    {
+      "id": "mod2",
+      "title": "2. Phys. Netzwerktechnik",
+      "duration": "4 Tage",
+      "content": {
+        "intro": "In Modul 2 tauchen wir in die physische Welt der Netzwerke ein: Kabel, Signale und die Schicht 1 des OSI-Modells.",
+        "media": { "type": "audio", "src": "media/mod2_audio_placeholder.mp3" },
+        "explanation": "<h3>Kupfer vs. Glasfaser</h3><p>Daten müssen physisch von A nach B gelangen. Das passiert entweder über Strom (Kupferkabel), Licht (Glasfaser) oder Funk (WLAN).</p><ul><li><strong>Twisted Pair (Kupfer):</strong> Das typische LAN-Kabel (RJ-45). Es nutzt elektrische Impulse. Günstig, aber auf ca. 100 Meter begrenzt.</li><li><strong>Glasfaser (Fiber Optic):</strong> Nutzt Lichtsignale. Extrem schnell und überbrückt Kilometer ohne Signalverlust, ist aber teurer und empfindlicher.</li></ul><h3>Was ist Ethernet?</h3><p>Ethernet ist der globale Standard für kabelgebundene LANs. Es definiert, wie Daten in kleine Pakete (Frames) verpackt werden und wie Geräte erkennen, wann sie senden dürfen.</p>",
+        "image": "images/mod2_ethernet.png",
+        "examples": "<h3>Beispiel: Kabelbruch</h3><p>Wenn du in einem Rechenzentrum zwei Switches verbinden musst, die 300 Meter voneinander entfernt sind, darfst du kein normales Kupferkabel (Twisted Pair) nehmen! Nach 100 Metern wird das Signal zu schwach. Du musst ein Glasfaserkabel verlegen.</p>"
+      },
+      "quiz": [
+        {
+          "question": "Wie lang darf ein typisches Twisted-Pair-Kupferkabel (z.B. Cat6) maximal sein, bevor das Signal verstärkt werden muss?",
+          "options": ["10 Meter", "100 Meter", "500 Meter", "1 Kilometer"],
+          "answer": 1,
+          "explanation": "Der Standard für kupferbasierte Ethernet-Kabel (Twisted Pair) begrenzt die maximale Segmentlänge auf 100 Meter (328 Fuß)."
+        },
+        {
+          "question": "Welches Medium verwendet Lichtimpulse zur Datenübertragung?",
+          "options": ["Coaxial-Kabel", "Twisted-Pair-Kabel", "Glasfaserkabel", "Serielles Kabel"],
+          "answer": 2,
+          "explanation": "Glasfaserkabel (Fiber Optic) übertragen Daten mithilfe von Licht (Laser oder LEDs), was extrem hohe Geschwindigkeiten und Reichweiten ermöglicht."
+        },
+        {
+          "question": "Welcher Steckertyp wird am häufigsten für Kupfer-Ethernet-Netzwerke verwendet?",
+          "options": ["RJ-11", "RJ-45", "USB", "HDMI"],
+          "answer": 1,
+          "explanation": "Der RJ-45-Stecker ist der weltweite Standard für Ethernet-Twisted-Pair-Verkabelung in LANs."
+        }
+      ],
+      "flashcards": [
+        { "term": "RJ-45", "definition": "Standardstecker für Ethernet-Kupferkabel in LANs." },
+        { "term": "Glasfaser (Fiber)", "definition": "Kabel, das Licht zur Datenübertragung nutzt (hohe Reichweite)." },
+        { "term": "Twisted Pair", "definition": "Kupferkabel mit verdrillten Aderpaaren zur Reduzierung von Störungen. Max. 100m." }
+      ]
+    },
+    {
+      "id": "mod3",
+      "title": "3. Switching & Cisco IOS",
+      "duration": "5 Tage",
+      "content": {
+        "intro": "In Modul 3 lernen wir die 'Gehirne' der Switches kennen: Das Cisco IOS Betriebssystem und wie Switches Frames weiterleiten.",
+        "media": { "type": "audio", "src": "media/mod3_audio_placeholder.mp3" },
+        "explanation": "<h3>Die MAC-Adresstabelle</h3><p>Ein Switch ist schlau. Er merkt sich, wer an welchem Port angeschlossen ist. Das tut er mithilfe der <strong>MAC-Adresstabelle</strong>. Jedes Netzwerkgerät hat eine einzigartige physische Adresse (die MAC-Adresse). Wenn ein PC ein Datenpaket (Frame) sendet, schaut sich der Switch die Quell-MAC-Adresse an und speichert sie zusammen mit der Port-Nummer ab.</p><h3>Cisco IOS (Internetwork Operating System)</h3><p>Das ist das Betriebssystem, das auf Cisco Routern und Switches läuft. Du konfigurierst die Geräte über eine Kommandozeile (CLI - Command Line Interface). Es gibt verschiedene Modi:</p><ul><li><strong>User EXEC Mode (&gt;):</strong> Sehr eingeschränkt. Nur ein paar einfache Befehle zum Anschauen.</li><li><strong>Privileged EXEC Mode (#):</strong> Hier kannst du dir alles anzeigen lassen und tiefer ins System schauen. (Befehl: <em>enable</em>)</li><li><strong>Global Configuration Mode (config)#:</strong> Hier machst du Änderungen, die das gesamte Gerät betreffen, z.B. den Namen (Hostname) ändern. (Befehl: <em>configure terminal</em>)</li></ul>",
+        "image": "images/mod3_switching.png",
+        "examples": "<h3>Beispiel: Ein Switch lernt</h3><p>PC-A (Port 1) schickt ein Frame an PC-B (Port 2). Der Switch kennt PC-B noch nicht. Er speichert 'PC-A ist an Port 1' und flutet das Frame an <strong>alle</strong> anderen Ports (außer Port 1). Wenn PC-B antwortet, speichert der Switch 'PC-B ist an Port 2'. Ab jetzt schickt der Switch die Frames zwischen A und B nur noch direkt über Port 1 und 2 – ohne die anderen zu stören!</p>"
+      },
+      "quiz": [
+        {
+          "question": "In welchem Cisco IOS Modus musst du dich befinden, um den Hostnamen des Switches zu ändern?",
+          "options": ["User EXEC Mode", "Privileged EXEC Mode", "Global Configuration Mode", "Interface Configuration Mode"],
+          "answer": 2,
+          "explanation": "Um geräteweite Konfigurationen wie den Hostnamen zu ändern, musst du im Global Configuration Mode (Switch(config)#) sein."
+        },
+        {
+          "question": "Was macht ein Switch, wenn er die Ziel-MAC-Adresse eines eintreffenden Frames nicht in seiner MAC-Tabelle findet?",
+          "options": ["Er verwirft das Frame", "Er sendet es an den Router", "Er flutet das Frame an alle Ports außer dem Empfangsport", "Er schickt es an den Absender zurück"],
+          "answer": 2,
+          "explanation": "Dieses Verhalten nennt man 'Flooding'. Der Switch schickt das Frame an alle (Unknown Unicast), um sicherzustellen, dass das Ziel es auf jeden Fall erhält."
+        },
+        {
+          "question": "Mit welchem Befehl wechselst du vom User EXEC Mode in den Privileged EXEC Mode?",
+          "options": ["configure terminal", "enable", "exit", "login"],
+          "answer": 1,
+          "explanation": "Der Befehl 'enable' (oft abgekürzt als 'en') bringt dich vom User Modus (>) in den Privileged Modus (#)."
+        }
+      ],
+      "flashcards": [
+        { "term": "MAC-Tabelle", "definition": "Der Speicher des Switches, der Ports den MAC-Adressen zuordnet." },
+        { "term": "User EXEC Mode", "definition": "Eingeschränkter Modus im Cisco IOS (Prompt: >)." },
+        { "term": "Privileged EXEC Mode", "definition": "Voller Lesemodus für Status und Debugging (Prompt: #)." },
+        { "term": "Global Config Mode", "definition": "Hier nimmst du geräteweite Einstellungen vor (Prompt: (config)#)." }
+      ]
+    },
+    { "id": "mod4", "title": "4. VLAN & Trunking", "duration": "4 Tage" },
+    { "id": "mod5", "title": "5. IPv4 & Subnetting", "duration": "6 Tage" },
+    { "id": "mod6", "title": "6. ARP, ICMP & Routing", "duration": "4 Tage" },
+    { "id": "mod7", "title": "7. Inter-VLAN, STP", "duration": "4 Tage" },
+    { "id": "mod8", "title": "8. Netzwerkdienste & Trans.", "duration": "4 Tage" },
+    { "id": "mod9", "title": "9. IPv6", "duration": "2 Tage" },
+    { "id": "mod10", "title": "10. Routing & Security", "duration": "3 Tage" },
+    { "id": "mod11", "title": "Abschlussprojekt", "duration": "Final" }
+  ]
+}
